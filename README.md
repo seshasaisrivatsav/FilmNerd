@@ -2,9 +2,11 @@
 
 This is a MEAN Stack project. I built it during my Web Development class at Northeastern University.
 
+prerequisites
+1. NodeJS
+2. MongoDB
 
-Also, you must 
-
+To run this on your machine, you must
 1 Uncomment line 33 and comment line 32 in server.js 
 2 comment lines 14 to 18 in user.service.server.js﻿
 3 You can run the project by running 
