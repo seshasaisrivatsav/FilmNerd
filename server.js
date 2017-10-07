@@ -6,8 +6,8 @@ var app = express();
 
 
 var connectionString = 'mongodb://127.0.0.1:27017/webdev-assignment';
-
-
+var connectionString = 'mongodb://sesha:sesha@ds113825.mlab.com:13825/filmnerd';
+/*
 if(process.env.OPENSHIFT_MONGODB_DB_PASSWORD) {
     connectionString = process.env.OPENSHIFT_MONGODB_DB_USERNAME + ":" +
         process.env.OPENSHIFT_MONGODB_DB_PASSWORD + "@" +
@@ -16,11 +16,13 @@ if(process.env.OPENSHIFT_MONGODB_DB_PASSWORD) {
         process.env.OPENSHIFT_APP_NAME;
 }
 
+*/
+
+
+
 var mongoose = require("mongoose");
 mongoose.connect(connectionString);
 
-// var mongoose = require('mongoose');
-// mongoose.connect('mongodb://localhost/webdev-assignment');
 
 
 var bodyParser = require('body-parser');
@@ -29,8 +31,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 /* VVVIP : session has to be initialized AFTER Cookie Parser */
 app.use(cookieParser());
-app.use(session({secret: process.env.SESSION_SECRET}));
-//app.use(session({secret: "aasdasd"}));
+//app.use(session({secret: process.env.SESSION_SECRET}));
+app.use(session({secret: "aasdasd"}));
 
 
 // First initialize passport and then tell it to use the express    session
@@ -42,8 +44,9 @@ app.use(express.static(__dirname + '/public'));
 
 //require ("./test/app.js")(app);
 
-var ipaddress = process.env.OPENSHIFT_NODEJS_IP;
-var port      = process.env.OPENSHIFT_NODEJS_PORT || 3000;
+
+
+var port = process.env.PORT || 3000;
 
 
 /**/
@@ -52,11 +55,10 @@ var port      = process.env.OPENSHIFT_NODEJS_PORT || 3000;
 // /* we passed instance of app from app.js */
 // assignment(app);
 
+
 var project = require("./project/app.js");
 project(app);
 
 
-
-
-app.listen(port, ipaddress);
+app.listen(port,() => console.log(`API running on localhost:${port}`));
 
