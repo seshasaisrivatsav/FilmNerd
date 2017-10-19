@@ -1,5 +1,5 @@
 <h1> Film Nerd</h1>
-<img src="https://film-nerd.herokuapp.com/project/img/film_nerd_logo.jpg">
+<img src="https://film-nerd.herokuapp.com/project/img/film_nerd_logo.jpg" height=50px>
 
 <p>Film Nerd is a MEAN Stack project. I built it during my Web Development class at Northeastern University.</p>
 
