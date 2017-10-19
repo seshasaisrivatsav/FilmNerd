@@ -1,6 +1,7 @@
-<h1> kuchibhotla-sesha_sai_srivatsav-web-dev</h1>
+<h1> Film Nerd</h1>
+<img src="https://film-nerd.herokuapp.com/project/img/film_nerd_logo.jpg">
 
-<h2>This is a MEAN Stack project. I built it during my Web Development class at Northeastern University.</h2>
+<p>Film Nerd is a MEAN Stack project. I built it during my Web Development class at Northeastern University.</p>
 
 <h1>prerequisites</h1>
 <p>1. NodeJS</p>
