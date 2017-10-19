@@ -3,12 +3,12 @@
 
 <p>Film Nerd is a MEAN Stack project. I built it during my Web Development class at Northeastern University.</p>
 
-<img src="https://webassets.mongodb.com/_com_assets/cms/mean%202-c6c9d2d665.png" height=200px>
+<img src="https://drive.google.com/open?id=0B-6TLW-AJILFZk1sLXFaanpQRFE" height=200px>
 
 
 <h2>Required Installations on local machine</h2>
 <ol>
-  <li>NodeJs</li>
+  <li>nodeJs</li>
   <li>MongoDB</li>
   <li>ExpressJS</li>
 </ol>  
@@ -25,7 +25,7 @@
 
 
 <p style="font-size:50%;">Copyright 2016, Sesha Sai Srivatsav, All rights reserved.</p>
-
+<p style="font-size:11%;">This is a paragraph.</p>
 
 <p style="font-size:50%;">Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
