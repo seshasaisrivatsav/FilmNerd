@@ -3,7 +3,7 @@
 
 <p>Film Nerd is a MEAN Stack project. I built it during my Web Development class at Northeastern University.</p>
 
-<img src="https://drive.google.com/open?id=0B-6TLW-AJILFUGVGdlNSWER5UFU" height=70px>
+<img src="https://drive.google.com/file/d/0B-6TLW-AJILFUGVGdlNSWER5UFU/view?usp=sharing" height=70px>
 
 
 <h2>Required Installations on local machine</h2>
