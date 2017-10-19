@@ -1,7 +1,17 @@
 <h1><img src="https://film-nerd.herokuapp.com/project/img/film_nerd_logo.jpg" height=50px> Film Nerd</h1>
 
 
-<p>Film Nerd is a MEAN Stack project. I built it during my Web Development class at Northeastern University.</p>
+<p>Film Nerd is a MEAN Stack project. I built it during my Web Development class at Northeastern University. Film Nerd is a place where all the movie fans can browse for their favorite films. You can check out movies playing near you by ratings. You can rate, review movies, follow your favorite movie reviewer(s). Check Out everything about the film. (Genre, Runtime, release data, cast.)</p>
+<ul>
+  <li>Check movies shown around you</li>
+  <li>Rate and review movies</li>
+  <li>Follow popular reviewers</li>
+  <li>Check out the actors of a film</li>
+</ul>
+
+
+
+
 
 <img src="https://excellentwebworld.com/wp-content/uploads/2017/09/images-3.jpg" height=190px>
 
