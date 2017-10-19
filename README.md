@@ -13,7 +13,6 @@
 
 
 
-<img src="https://excellentwebworld.com/wp-content/uploads/2017/09/images-3.jpg" height=190px>
 
 <h2>Live instance of the project
 </h2>
@@ -24,6 +23,8 @@
 <a href="https://www.youtube.com/embed/kWUMWL3Ntk8" > Video Link</a>
 
 <h2>Required Installations on local machine</h2>
+<img src="https://excellentwebworld.com/wp-content/uploads/2017/09/images-3.jpg" height=190px>
+
 <ol>
   <li>nodeJs</li>
   <li>MongoDB</li>
