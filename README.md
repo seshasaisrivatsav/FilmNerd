@@ -5,6 +5,13 @@
 
 <img src="https://excellentwebworld.com/wp-content/uploads/2017/09/images-3.jpg" height=190px>
 
+<h2>
+Live instance of the project : https://film-nerd.herokuapp.com/project/index.html 
+</h2>
+
+
+<h2>Youtube demo</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kWUMWL3Ntk8" frameborder="0" allowfullscreen></iframe>
 
 <h2>Required Installations on local machine</h2>
 <ol>
@@ -12,6 +19,8 @@
   <li>MongoDB</li>
   <li>ExpressJS</li>
 </ol>  
+
+
 
 
 
