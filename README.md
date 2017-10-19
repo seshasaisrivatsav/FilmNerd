@@ -21,11 +21,19 @@
   <li>Comment lines 14 to 18 in user.service.server.js﻿</li>
   <li>You can run the project by running "node server.js"</li>
 </ol>  
+
  
+<h2>Environment Variables</h2>
+<p>To enable third party log in </p>
+<ol>
+  <li>GOOGLE_CLIENT_ID</li>
+  <li>GOOGLE_CLIENT_SECRET</li>
+  <li>GOOGLE_CALLBACK_URL</li>
+</ol>  
 
-
+<h2>Copyright</h2>
 <p style="font-size:50%;">Copyright 2016, Sesha Sai Srivatsav, All rights reserved.</p>
-<p style="font-size:11%;">This is a paragraph.</p>
+ 
 
 <p style="font-size:50%;">Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
