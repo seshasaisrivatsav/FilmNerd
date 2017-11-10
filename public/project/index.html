@@ -1,116 +1,116 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="FilmNerd">
-<head>
-    <meta charset="UTF-8">
-    <!-- Meta tags for making website for mobile-->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <!-- Making it Safari Friendly-->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <!--Disabling user pinch and default to 25% size-->
-    <meta name="viewport" content="initial-scale=1.25, user-scalable=no">
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" ng-app="FilmNerd">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--&lt;!&ndash; Meta tags for making website for mobile&ndash;&gt;-->
+    <!--<meta name="apple-mobile-web-app-capable" content="yes">-->
+    <!--&lt;!&ndash; Making it Safari Friendly&ndash;&gt;-->
+    <!--<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+    <!--&lt;!&ndash;Disabling user pinch and default to 25% size&ndash;&gt;-->
+    <!--<meta name="viewport" content="initial-scale=1.25, user-scalable=no">-->
 
-    <title>Film Nerd Home</title>
+    <!--<title>Film Nerd Home</title>-->
 
-    <!-- BootStrap style sheet-->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+    <!--&lt;!&ndash; BootStrap style sheet&ndash;&gt;-->
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>-->
+    <!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>-->
 
-    <!--IMP-->
-    <!-- Load jQuery before Angular for DOM manipulation-->
-    <!-- jQuery CSS-->
-    <link href="../css/jquery-ui.css" rel="stylesheet"/>
+    <!--&lt;!&ndash;IMP&ndash;&gt;-->
+    <!--&lt;!&ndash; Load jQuery before Angular for DOM manipulation&ndash;&gt;-->
+    <!--&lt;!&ndash; jQuery CSS&ndash;&gt;-->
+    <!--<link href="../css/jquery-ui.css" rel="stylesheet"/>-->
 
-    <!-- STYLE sheet comes after all the libraries are loaded. Document style-->
-    <link href="css/style.css" rel="stylesheet"/>
+    <!--&lt;!&ndash; STYLE sheet comes after all the libraries are loaded. Document style&ndash;&gt;-->
+    <!--<link href="css/style.css" rel="stylesheet"/>-->
 
-    <!--JQuery-->
-    <script src="../js/jquery.js"></script>
-    <script src="../js/jquery-ui.js"></script>
+    <!--&lt;!&ndash;JQuery&ndash;&gt;-->
+    <!--<script src="../js/jquery.js"></script>-->
+    <!--<script src="../js/jquery-ui.js"></script>-->
 
-    <!--Angular Modules-->
-    <!--Angular Module. Deals with centralized routing mechanism-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-    <!--Routing Module-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
-
-
-    <!--App.js-->
-    <script src="app.js"></script>
-
-    <!--config.js. What do we wanna show when we click things. configure-->
-    <!-- this is the centralized single maintenance point-->
-    <script src="config.js"></script>
-
-    <!-- FROM THE HOME PAGE : START -->
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
-    <!-- Custom Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" type="text/css">
+    <!--&lt;!&ndash;Angular Modules&ndash;&gt;-->
+    <!--&lt;!&ndash;Angular Module. Deals with centralized routing mechanism&ndash;&gt;-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>-->
+    <!--&lt;!&ndash;Routing Module&ndash;&gt;-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>-->
 
 
+    <!--&lt;!&ndash;App.js&ndash;&gt;-->
+    <!--<script src="app.js"></script>-->
 
+    <!--&lt;!&ndash;config.js. What do we wanna show when we click things. configure&ndash;&gt;-->
+    <!--&lt;!&ndash; this is the centralized single maintenance point&ndash;&gt;-->
+    <!--<script src="config.js"></script>-->
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <!--&lt;!&ndash; FROM THE HOME PAGE : START &ndash;&gt;-->
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <!--&lt;!&ndash; Bootstrap Core CSS &ndash;&gt;-->
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">-->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/scrollreveal.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
-
-    <!-- FROM THE HOME PAGE : END  -->
-
-    <!--Controllers-->
-    <!--Users Controllers -->
-        <script src="views/user/home.controller.client.js"></script>
-        <script src="views/user/login.controller.client.js"></script>
-        <script src="views/user/register.controller.client.js"></script>
-        <script src="views/user/profile.controller.client.js"></script>
-        <script src="views/user/profile-edit.controller.client.js"></script>
-        <script src="views/user/user-profile.controller.client.js"></script>
-
-    <!--Main Controller / Movie Related -->
-        <script src="views/main/search.controller.client.js"></script>
-        <script src="views/main/movie-info.controller.client.js"></script>
-        <script src="views/main/movie-default.controller.client.js"></script>
-        <script src="views/main/movie-review.controller.client.js"></script>
-        <script src="views/main/cast-info.controller.client.js"></script>
+    <!--&lt;!&ndash; Custom Fonts &ndash;&gt;-->
+    <!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>-->
+    <!--<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>-->
+    <!--<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" type="text/css">-->
 
 
 
-    <!-- Comment -->
-    <!-- Admin Controller-->
-        <script src="views/admin/create-admin.controller.client.js"></script>
-        <script src="views/admin/admin-console.controller.client.js"></script>
-        <script src="views/admin/admin-flaggedreviews.controller.client.js"></script>
-        <script src="views/admin/manage-users.controller.client.js"></script>
-        <script src="views/admin/manage-movies.controller.client.js"></script>
 
-    <!--Services-->
-        <script src="services/tmdbapi.service.client.js"></script>
-        <script src="services/user.service.client.js"></script>
-        <script src="services/movie.service.client.js"></script>
+    <!--&lt;!&ndash; Plugin CSS &ndash;&gt;-->
+    <!--<link rel="stylesheet" href="css/magnific-popup.css" type="text/css">-->
 
-</head>
-<body >
-  <div ng-view></div>
+    <!--&lt;!&ndash; Custom CSS &ndash;&gt;-->
+    <!--<link rel="stylesheet" href="css/creative.css" type="text/css">-->
 
-</body>
-</html>
+    <!--&lt;!&ndash; jQuery &ndash;&gt;-->
+    <!--<script src="js/jquery.js"></script>-->
+
+    <!--&lt;!&ndash; Bootstrap Core JavaScript &ndash;&gt;-->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+
+    <!--&lt;!&ndash; Plugin JavaScript &ndash;&gt;-->
+    <!--<script src="js/scrollreveal.min.js"></script>-->
+    <!--<script src="js/jquery.easing.min.js"></script>-->
+    <!--<script src="js/jquery.fittext.js"></script>-->
+    <!--<script src="js/jquery.magnific-popup.min.js"></script>-->
+
+    <!--&lt;!&ndash; Custom Theme JavaScript &ndash;&gt;-->
+    <!--<script src="js/creative.js"></script>-->
+
+    <!--&lt;!&ndash; FROM THE HOME PAGE : END  &ndash;&gt;-->
+
+    <!--&lt;!&ndash;Controllers&ndash;&gt;-->
+    <!--&lt;!&ndash;Users Controllers &ndash;&gt;-->
+        <!--<script src="views/user/home.controller.client.js"></script>-->
+        <!--<script src="views/user/login.controller.client.js"></script>-->
+        <!--<script src="views/user/register.controller.client.js"></script>-->
+        <!--<script src="views/user/profile.controller.client.js"></script>-->
+        <!--<script src="views/user/profile-edit.controller.client.js"></script>-->
+        <!--<script src="views/user/user-profile.controller.client.js"></script>-->
+
+    <!--&lt;!&ndash;Main Controller / Movie Related &ndash;&gt;-->
+        <!--<script src="views/main/search.controller.client.js"></script>-->
+        <!--<script src="views/main/movie-info.controller.client.js"></script>-->
+        <!--<script src="views/main/movie-default.controller.client.js"></script>-->
+        <!--<script src="views/main/movie-review.controller.client.js"></script>-->
+        <!--<script src="views/main/cast-info.controller.client.js"></script>-->
+
+
+
+    <!--&lt;!&ndash; Comment &ndash;&gt;-->
+    <!--&lt;!&ndash; Admin Controller&ndash;&gt;-->
+        <!--<script src="views/admin/create-admin.controller.client.js"></script>-->
+        <!--<script src="views/admin/admin-console.controller.client.js"></script>-->
+        <!--<script src="views/admin/admin-flaggedreviews.controller.client.js"></script>-->
+        <!--<script src="views/admin/manage-users.controller.client.js"></script>-->
+        <!--<script src="views/admin/manage-movies.controller.client.js"></script>-->
+
+    <!--&lt;!&ndash;Services&ndash;&gt;-->
+        <!--<script src="services/tmdbapi.service.client.js"></script>-->
+        <!--<script src="services/user.service.client.js"></script>-->
+        <!--<script src="services/movie.service.client.js"></script>-->
+
+<!--</head>-->
+<!--<body >-->
+  <!--<div ng-view></div>-->
+
+<!--</body>-->
+<!--</html>-->
