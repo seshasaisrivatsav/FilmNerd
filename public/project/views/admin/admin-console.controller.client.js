@@ -6,7 +6,7 @@
     function AdminConsoleController(TmdbApiService, $rootScope, $location, $sce, UserService) {
         var vm = this;
 
-        vm.logout();
+        vm.logout = logout;
 
         function init() {
 

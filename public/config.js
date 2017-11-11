@@ -21,7 +21,7 @@
             })
 
             .when("/managemovies",{
-                templateUrl: "./projectviews/admin/manage-movies.view.client.html",
+                templateUrl: "./project/views/admin/manage-movies.view.client.html",
                 controller: "ManageMoviesController",
                 controllerAs: "model",
                 resolve :{
@@ -29,7 +29,7 @@
                 }
             })
             .when("/manageusers",{
-                templateUrl: "views/admin/manage-users.view.client.html",
+                templateUrl: "./project/views/admin/manage-users.view.client.html",
                 controller: "ManageUsersController",
                 controllerAs: "model",
                 resolve :{

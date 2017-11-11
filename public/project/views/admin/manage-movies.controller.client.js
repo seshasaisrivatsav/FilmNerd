@@ -9,6 +9,7 @@
         vm.updateMovie = updateMovie;
         vm.deleteMovie = deleteMovie;
 
+        vm.logout = logout;
         function init() {
             getLoggedInUser();
             findAllMovies();
@@ -86,6 +87,20 @@
                 vm.notloggedIn = "true";
 
             }
+        }
+
+
+        function logout() {
+            UserService
+                .logout()
+                .then(
+                    function (response) {
+                        $location.url("/login");
+                    },
+                    function () {
+                        $location.url("/login");
+                    }
+                );
         }
 
     }
