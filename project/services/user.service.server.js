@@ -6,13 +6,20 @@ var bcrypt = require("bcrypt-nodejs");
 
 // Running Locally
 
+// var googleConfig = {
+//     clientID     : "19483974661-f0g4hn8mplkvlc9dm9kip4refl4k0u2i.apps.googleusercontent.com",
+//     clientSecret : "jmupSkxQtUqRuuhAKTcOfddz",
+//     callbackURL  : "http://127.0.0.1:3000/auth/google/callback"
+// };
+
 var googleConfig = {
     clientID     : "19483974661-f0g4hn8mplkvlc9dm9kip4refl4k0u2i.apps.googleusercontent.com",
     clientSecret : "jmupSkxQtUqRuuhAKTcOfddz",
-    callbackURL  : "http://127.0.0.1:3000/auth/google/callback"
+    callbackURL  : "https://film-nerd.herokuapp.com/auth/google/callback"
 };
 
-// Running on a host
+
+// Running on a host https://film-nerd.herokuapp.com/
 // var googleConfig = {
 //     clientID     : process.env.GOOGLE_CLIENT_ID,
 //     clientSecret : process.env.GOOGLE_CLIENT_SECRET,
