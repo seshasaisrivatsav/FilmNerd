@@ -297,9 +297,7 @@ module.exports= function(app, models){
     // }
 
     function createUser(req, res) {
-
-        var username = req.body.username;
-
+        const username = req.body.username;
         userModel
             .findUserByUsername(username)
             .then(
@@ -314,6 +312,8 @@ module.exports= function(app, models){
                     }
                 },
                 function (err) {
+                    console.log("pandi");
+                    console.log(err);
                     res.sendStatus(400).send(err);
                 }
             )

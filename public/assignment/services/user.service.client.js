@@ -3,9 +3,6 @@
         .module("WebAppMaker")
         .factory("UserService", UserService);
 
-
-
-
     function UserService($http) {
         /* provide an API that allows access to this thing */
         var api = {
@@ -26,14 +23,11 @@
         /*functions are implemented below*/
 
         function register(username, password) {
-
-
             var user= {
                 username: username,
                 password : password
             };
             return $http.post("/api/register",user);
-
         }
 
         
@@ -74,20 +68,15 @@
 
         }
 
-
-
         function updateUser(userId, user){
-            var url="/api/user/"+userId;
+            const url = "/api/user/" + userId;
             return $http.put(url, user);
-
-
         }
 
 
         function deleteUser(userId){
-            var url = "/api/user/"+userId;
+            const url = "/api/user/" + userId;
             return $http.delete(url);
-
         }
         
     }

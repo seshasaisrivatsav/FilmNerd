@@ -5,22 +5,9 @@ let passport = require('passport'); //core passport library initialized here
 let app = express();
 
 
-// let connectionString = 'mongodb://127.0.0.1:27017/webdev-assignment';
-let connectionString = 'mongodb://sesha:sesha@ds113825.mlab.com:13825/filmnerd';
-
-
-// if(process.env.MONGODB_DB_PASSWORD) {
-//     connectionString = "mongodb://" + process.env.MONGODB_DB_USERNAME + ":" +
-//         process.env.MONGODB_DB_PASSWORD + "@" +
-//         process.env.MONGODB_DB_HOST + '.mlab.com:' +
-//         process.env.MONGODB_DB_PORT + '/' +
-//         process.env._APP_NAME;
-// }
-
-
+let connectionString = 'mongodb+srv://seshasaisrivatsav:mongodbpassword@cluster0.brg0p.mongodb.net/filmNerd?retryWrites=true&w=majority';
 let mongoose = require("mongoose");
 mongoose.connect(connectionString);
-
 
 
 let bodyParser = require('body-parser');

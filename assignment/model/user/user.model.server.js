@@ -1,9 +1,4 @@
-
-// this API for the database
-//encapsulate all CRUD operations in this
-//Only database operations happen here
 module.exports = function () {
-
     var mongoose = require ("mongoose");
     var UserSchema = require("./user.schema.server")();
     var User =  mongoose.model("User", UserSchema); //mongo plurarizes
@@ -54,9 +49,9 @@ module.exports = function () {
     }
 
     function createUser(user){
-       console.log("user.model.server.createUser()");
+        console.log("user.model.server.createUser()");
         console.log(user);
-        return  User.create(user);
+        return User.create(user);
     }
     
 };

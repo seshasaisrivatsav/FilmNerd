@@ -3,12 +3,9 @@
         .module("FilmNerd")
         .factory("UserService", UserService);
 
-
-
-
     function UserService($http) {
         /* provide an API that allows access to this thing */
-        var api = {
+        const api = {
             loggedIn: loggedIn,
             createUser: createUser,
             register: register,
@@ -109,8 +106,6 @@
         function deleteUser(userId){
             var url = "/api/project/user/"+userId;
             return $http.delete(url);
-
         }
-
     }
 })();
