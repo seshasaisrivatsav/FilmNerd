@@ -1,6 +1,7 @@
 <h1><img src="https://film-nerd.herokuapp.com/project/img/film_nerd_logo.jpg" height=50px> Film Nerd</h1>
 
 
+
 <p>Film Nerd is a MEAN Stack project. I built it during my Web Development class at Northeastern University. Film Nerd is a place where all the movie fans can browse for their favorite films. You can check out movies playing near you by ratings. You can rate, review movies, follow your favorite movie reviewer(s). Check Out everything about the film. (Genre, Runtime, release data, cast.)</p>
 <ul>
   <li>Check movies shown around you</li>
@@ -8,10 +9,6 @@
   <li>Follow popular reviewers</li>
   <li>Check out the actors of a film</li>
 </ul>
-
-
-
-
 
 
 <h2>Live instance of the project
@@ -64,3 +61,43 @@ furnished to do so, subject to the following conditions:</p>
 
 <p style="font-size:50%;">The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.</p>
+
+## Running the app locally
+### Prerequisites
+1. Node is installed
+2. Have an IDE
+3. MongoDB must be installed and must be kept running in terminal. See ## mongodb installation below
+
+```shell script
+nvm use
+npm install ## first time
+npm ci ## otherwise
+node server.js ## runs server on 3000
+```
+Navigate to http://localhost:3000/#/
+
+## MongoDB installation
+```shell script
+# If you still have the old mongodb installed from homebrew-core
+brew services stop mongodb
+brew uninstall homebrew/core/mongodb
+
+# Use the migrated distribution from custom tap
+brew tap mongodb/brew
+brew install mongodb-community
+brew services start mongodb-community
+mongo ## starts the database
+
+
+
+
+
+
+
+brew install mongocli ## install mongoDB cli
+mongocli help ## verify installation
+
+
+
+```
+- mongod --dbpath=/Users/user/data/db

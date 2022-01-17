@@ -1,12 +1,12 @@
-var express = require('express');
-var cookieParser = require('cookie-parser');
-var session      = require('express-session');
-var passport = require('passport'); //core passport library initialized here
-var app = express();
+let express = require('express');
+let cookieParser = require('cookie-parser');
+let session = require('express-session');
+let passport = require('passport'); //core passport library initialized here
+let app = express();
 
 
-//var connectionString = 'mongodb://127.0.0.1:27017/webdev-assignment';
-var connectionString = 'mongodb://sesha:sesha@ds113825.mlab.com:13825/filmnerd';
+// let connectionString = 'mongodb://127.0.0.1:27017/webdev-assignment';
+let connectionString = 'mongodb://sesha:sesha@ds113825.mlab.com:13825/filmnerd';
 
 
 // if(process.env.MONGODB_DB_PASSWORD) {
@@ -18,12 +18,12 @@ var connectionString = 'mongodb://sesha:sesha@ds113825.mlab.com:13825/filmnerd';
 // }
 
 
-var mongoose = require("mongoose");
+let mongoose = require("mongoose");
 mongoose.connect(connectionString);
 
 
 
-var bodyParser = require('body-parser');
+let bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -40,10 +40,10 @@ app.use(passport.session());
 // configure a public directory to host static content
 app.use(express.static(__dirname + '/public'));
 
-var port = process.env.PORT || 3000;
+let port = process.env.PORT || 3000;
 
 
-var project = require("./project/app.js");
+let project = require("./project/app.js");
 project(app);
 
 

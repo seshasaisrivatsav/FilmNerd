@@ -36,18 +36,18 @@
         }
 
         function getUpcomingMovies() {
-            var url = baseUrl + '/movie/upcoming?api_key=' + apikey;
+            const url = baseUrl + '/movie/upcoming?api_key=' + apikey;
             return $http.get(url);
         }
 
         function findMovieByID(id, callback) {
-            var appendTags = 'videos,credits,reviews';
+            const appendTags = 'videos,credits,reviews';
             $http.get(baseUrl + '/movie/' + id + '?api_key=' + apikey + '&append_to_response=' + appendTags)
                 .success(callback);
         }
 
         function findCastByID(id, callback) {
-            var appendTags = 'movie_credits';
+            const appendTags = 'movie_credits';
             $http.get(baseUrl + '/person/' + id + '?api_key=' + apikey + '&append_to_response=' + appendTags)
                 .success(callback);
         }
